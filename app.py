@@ -209,5 +209,5 @@ def update():
     #locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')
     #app.run()
 
-if _name_ == "_main_":
+if __name__ == "_main_":
  app.run(host='0.0.0.0', port='8080') # indent this line
