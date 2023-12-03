@@ -4,7 +4,7 @@ from flask import Flask, render_template,session, redirect,request
 from datetime import datetime
 import locale
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
@@ -205,6 +205,9 @@ def update():
         return render_template ("cart.html", shoppingCart=shoppingCart, shopLen=shopLen, total=total, totItems=totItems, display=display, session=session )
 
 
-if __name__ == "__main__":
+#if _name_ == '_main_':
+    #locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')
+    #app.run()
+
+if _name_ == "_main_":
  app.run(host='0.0.0.0', port='8080') # indent this line
-    
