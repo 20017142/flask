@@ -11,7 +11,7 @@
                     <img src="/Static/Images/{{books[i]["image"]}}" class="book" alt="" />
                     <h5 class="card-title">{{books[i]["kind"]}}</h5>
                     {% if books[i]["onSale"] %}
-                    <img src="flask/Static/Images/img_1.jpg" width="26px" />
+                    <img src="20017142/flask/Static/Images/img_1.jpg" width="26px" />
                     <h4 class="card-text price" style="color:red; display:inline">{{ '{:,.2f}'.format(books[i]["onSalePrice"]) }}</h4>
                     {% else %}
                     <h4 class="card-text price">{{ '{:,.2f}'.format(books[i]["price"]) }}</h4>
